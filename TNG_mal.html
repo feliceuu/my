@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <title>Чамд зориулав</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff0f5;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1500&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      animation: fadeIn 2s ease-in;
+    }
+
+    h1 {
+      font-size: 4em;
+      margin: 0;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .message {
+      background: white;
+      margin: -80px auto 0 auto;
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 600px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      text-align: center;
+      animation: slideUp 1.5s ease-out;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 30px;
+      background: linear-gradient(to right, #ff6a00, #ee0979);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: transform 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 800px;
+      margin: auto;
+      color: #333;
+    }
+
+    section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #cc0066;
+    }
+
+    section p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1em;
+      font-family: inherit;
+      resize: vertical;
+    }
+
+    button {
+      background-color: #cc0066;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #a0004f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #888;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Сайн уу, mndmr!</h1>
+  </header>
+
+  <div class="message">
+    <h2>Чамд зориулав</h2>
+    <p>Чи миний амьдралд хамгийн тод өнгийг нэмдэг хүн. Чиний инээмсэглэл намайг урамшуулдаг. Энэ вэбсайт бол зүгээр нэг код биш — миний сэтгэлийн үгс юм </p>
+    <a href="#about" class="btn">Талархаж байна</a>
+  </div>
+
+  <section id="about">
+    <h2>Түүний тухай</h2>
+    <p>
+      ter бол үргэлж инээмсэглэдэг, ухаалаг, эелдэг хүн. Тэр үргэлж намайг сонсож, ойлгож, дэмжиж ирсэн. Заримдаа үгээр илэрхийлэхэд хэцүү байдаг ч, түүний оршихуй өөрөө л хангалттай дэмжлэг байдаг. bas uneheer teneg mal shuu CHI.
+    </p>
+    <p>
+      Тэр хүмүүст итгэл өгдөг, хүнлэг сэтгэлтэй, өөрийн гэсэн бодолтой, мөн бусдын төлөө сэтгэл гаргадаг. Би түүнийг мэдэх болсондоо баярладаг. HUTS MALAA
+    </p>
+  </section>
+
+  <section id="feedback">
+    <h2>Санал хүсэлтээ үлдээгээрэй</h2>
+    <p>Доорх маягт дээр нэр болон сэтгэгдлээ бичиж үлдээж болно.</p>
+    <form>
+      <input type="text" placeholder="feliceuu" required>
+      <textarea rows="5" placeholder="Сэтгэгдэл бичих..." required></textarea>
+      <button type="submit">Илгээх</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Чамд зориулав teneg gulguu
+  </footer>
+
+</body>
+</html>
